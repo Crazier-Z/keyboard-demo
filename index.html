@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #efeeee;
+        gap: 30px;
+      }
+
+      .img {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2),
+          -18px -18px 30px rgba(255, 255, 255, 1);
+        transition: all 0.2 ease-out;
+      }
+
+      img {
+        width: 60px;
+        transition: all 0.2 ease-out;
+      }
+
+      .img:hover {
+        cursor: pointer;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 rgba(255, 255, 255, 0.8),
+          inset 18px 18px 30px rgba(0, 0, 0, 0.1),
+          inset -18px -18px 30px rgba(255, 255, 255, 1);
+      }
+
+      .img:hover img {
+        width: 58px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="https://www.facebook.com/" target="_blank">
+      <div class="img"><img src="./imgs/facebook.png" /></div>
+    </a>
+    <a href="https://im.qq.com/index/" target="_blank">
+      <div class="img"><img src="./imgs/qq.png" /></div>
+    </a>
+    <a href="https://weixin.qq.com/" target="_blank">
+      <div class="img"><img src="./imgs/weixin.png" /></div>
+    </a>
+    <a href="https://www.bilibili.com/" target="_blank">
+      <div class="img"><img src="./imgs/bilibili.png" /></div>
+    </a>
+    <a href="https://www.douyin.com/" target="_blank">
+      <div class="img"><img src="./imgs/douyin.png" /></div>
+    </a>
+  </body>
+</html>
